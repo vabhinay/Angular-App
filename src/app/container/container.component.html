@@ -1,0 +1,30 @@
+<!-- body content-->
+<div class="body-container">
+  <!-- left navigation content-->
+  <nav>
+      <ul>
+          <li>
+              <a href="index.html">View</a>
+          </li>
+          <li>
+              <a href="./add.html">Add</a>
+          </li>
+          <li>
+              Delete
+          </li>
+      </ul>
+  </nav>
+
+  <!-- user blocks-->
+  <div class="user-container">
+      <h1>
+          List of Users
+      </h1>
+
+      <div class='clear'>
+          <div *ngFor="let user of userList">
+              <usr-user-card></usr-user-card>
+          </div>
+      </div>
+  </div>
+</div>
